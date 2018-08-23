@@ -8,6 +8,9 @@ class Shoe
     @brand = brand
       BRANDS << brand
       BRANDS.uniq!
+      # alt
+      BRANDS << brand unless BRANDS.include?(brand)
+
   end
 
 
